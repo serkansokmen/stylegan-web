@@ -6,7 +6,7 @@
 		@mouseleave="drageHover = false"
 		@mouseup="drageHover = false"
 	>
-		<div class="image" :class="{loading: imageLoading}" :style="{width: `${imageSize}px`, height: `${imageSize}px`}">
+		<div class="image" :class="{loading: imageLoading}" :style="{width: `${imageSize/2}px`, height: `${imageSize/2}px`}">
 			<img v-if="imageURL" :src="imageURL" @load="imageLoading = false" />
 		</div>
 		<div>
